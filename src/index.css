@@ -58,7 +58,8 @@
 
   --space-xxs: 0.25rem;
   --space-xs: 0.5rem;
-  --space-sm: 1rem;
+  --space-sm: 0.75rem;
+  --space-base: 1rem;
   --space-md: 1.5rem;
   --space-lg: 2rem;
 }
@@ -72,4 +73,132 @@ body {
 
 .btn {
   cursor: pointer;
+}
+
+.job-card {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-base);
+
+  background-color: #fff;
+  padding: var(--space-md);
+  border-radius: 0.25rem;
+}
+
+.job-card.featured {
+  border-inline-start: 5px solid var(--Green-400);
+}
+
+.company-logo {
+  position: absolute;
+  top: -1.5rem;
+
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.job-details {
+  display: grid;
+  gap: var(--space-base);
+
+  padding-block: var(--space-md);
+  border-block-end: 2px solid var(--Gray-400);
+}
+
+.company-info {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.company-name {
+  color: var(--Green-400);
+  font-size: var(--fs-base);
+  font-weight: var(--font-weight-bold);
+}
+
+.job-status {
+  display: flex;
+  gap: var(--space-xs);
+}
+
+.job-new,
+.job-featured {
+  color: var(--Green-50);
+  padding: var(--space-xs);
+  border-radius: 1rem;
+  font-size: var(--fs-sm);
+  font-weight: var(--font-weight-bold);
+}
+
+.job-new {
+  background-color: var(--Green-400);
+}
+
+.job-featured {
+  background-color: var(--Green-900);
+}
+
+.job-position {
+  color: var(--Green-900);
+  font-size: var(--fs-base);
+  font-weight: var(--font-weight-bold);
+
+  cursor: pointer;
+
+  &:active {
+    color: var(--Green-400);
+  }
+}
+
+.job-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+
+  color: var(--Gray-400);
+  font-size: var(--fs-base);
+  font-weight: var(--font-weight-medium);
+}
+
+.job-meta li {
+  margin-inline-end: var(--space-sm);
+}
+
+.job-meta li:first-child {
+  list-style: none;
+}
+
+.job-filter-btns {
+  display: flex;
+  gap: var(--space-base);
+
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  background-color: var(--Green-50);
+  color: var(--Green-400);
+  padding: var(--space-xs);
+  border: none;
+  border-radius: 0.25rem;
+
+  font-size: var(--fs-sm);
+  font-weight: var(--font-weight-bold);
+
+  &:focus-visible {
+    outline: none;
+    border: 2px solid var(--Gray-400);
+  }
+
+  &:hover {
+    color: var(--Green-900);
+  }
+
+  &:active {
+    background-color: var(--Green-400);
+    color: var(--Green-50);
+  }
 }
