@@ -62,6 +62,10 @@
   --space-base: 1rem;
   --space-md: 1.5rem;
   --space-lg: 2rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 3rem;
+  --space-3xl: 3.5rem;
+  --space-4xl: 4rem;
 }
 
 body {
@@ -73,6 +77,27 @@ body {
 
 .btn {
   cursor: pointer;
+}
+
+.wrapper {
+  background-color: var(--Green-400);
+}
+
+.header-background {
+  background-image: url("./assets/images/bg-header-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 10rem;
+}
+
+main {
+  display: grid;
+  gap: var(--space-xl);
+
+  background-color: var(--Green-50);
+  padding-inline: 5%;
+  padding-block-start: var(--space-4xl);
 }
 
 .job-card {
