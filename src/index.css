@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "League Spartan";
+  src: url("./assets/fonts/LeagueSpartan-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  /*===================
+        COLORS
+  ===================*/
+
+  /* Primary */
+  --Green-400: hsl(180, 29%, 50%);
+
+  /* Neutral */
+  --Green-50: hsl(180, 52%, 96%);
+  --Gray-400: hsl(180, 8%, 52%);
+  --Green-900: hsl(180, 14%, 20%);
+
+  /*===================
+        TYPOGRAPHY
+  ===================*/
+
+  /* font family */
+  --font-family-base: "League Spartan";
+
+  /* font sizes */
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-md: 1.125rem;
+  --fs-lg: 1.25rem;
+  --fs-xl: 1.5rem;
+  --fs-2xl: 1.875rem;
+  --fs-3xl: 2.25rem;
+  --fs-4xl: 3rem;
+  --fs-5xl: 3.75rem;
+  --fs-6xl: 4.5rem;
+
+  /* font weights */
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /*===================
+        SPACING
+  ===================*/
+
+  --space-xxs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+}
+
+body {
+  background-color: var(--Green-50);
+  font-family: var(--font-family-base), sans-serif;
+  font-size: var(--fs-base);
+  min-height: 100vh;
+}
