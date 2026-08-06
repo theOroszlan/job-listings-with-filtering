@@ -7,11 +7,11 @@ function JobCard({ job, className = "", handleFilter }) {
     { type: "role", value: job.role },
     { type: "level", value: job.level },
     ...job.languages.map((language) => ({
-      type: "language",
+      type: "languages",
       value: language,
     })),
     ...job.tools.map((tool) => ({
-      type: "tool",
+      type: "tools",
       value: tool,
     })),
   ];
