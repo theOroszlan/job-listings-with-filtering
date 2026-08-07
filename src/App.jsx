@@ -51,7 +51,7 @@ function App() {
 
   return (
     <div className="wrapper">
-      <div class="header-background"></div>
+      <div className="header-background"></div>
       <main>
         <FilterBar
           filters={filters}
