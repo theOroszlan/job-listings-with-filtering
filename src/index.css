@@ -112,6 +112,7 @@ main {
   background-color: #fff;
   padding: var(--space-md);
   border-radius: 0.25rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .job-card.featured {
@@ -245,6 +246,7 @@ main {
 
   margin-block-start: -6rem;
   margin-block-end: var(--space-lg);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 .filters {
