@@ -22,6 +22,7 @@
 
   /* Primary */
   --Green-400: hsl(180, 29%, 50%);
+  --bg-color: #fff;
 
   /* Neutral */
   --Green-50: hsl(180, 52%, 96%);
@@ -77,6 +78,7 @@ body {
 
 .btn {
   cursor: pointer;
+  border: none;
 }
 
 .wrapper {
@@ -109,7 +111,7 @@ main {
   flex-direction: column;
   gap: var(--space-md);
 
-  background-color: #fff;
+  background-color: var(--bg-color);
   padding: var(--space-md);
   border-radius: 0.25rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
@@ -211,7 +213,6 @@ main {
   background-color: var(--Green-50);
   color: var(--Green-400);
   padding: var(--space-xs);
-  border: none;
   border-radius: 0.25rem;
 
   font-size: clamp(var(--fs-sm), 1.75vw, var(--fs-base));
@@ -238,7 +239,7 @@ main {
   align-items: center;
   gap: var(--space-sm);
 
-  background-color: #fff;
+  background-color: var(--bg-color);
   padding-inline: var(--space-md);
   padding-block: var(--space-sm);
   border-radius: 0.5rem;
@@ -276,7 +277,6 @@ main {
 
   background-color: var(--Green-400);
   padding: var(--space-xs);
-  border: none;
   border-top-right-radius: 0.25rem;
   border-bottom-right-radius: 0.25rem;
 
@@ -288,8 +288,6 @@ main {
 .clear-btn {
   background: none;
   color: var(--Gray-400);
-  border: none;
-
   font-size: var(--fs-base);
   font-weight: var(--font-weight-bold);
 
