@@ -81,6 +81,7 @@ body {
 
 .wrapper {
   background-color: var(--Green-400);
+  min-width: max-content;
 }
 
 .header-background {
@@ -93,13 +94,11 @@ body {
 }
 
 main {
-  position: relative;
-
   display: grid;
   gap: var(--space-xl);
 
   background-color: var(--Green-50);
-  padding-inline: 5%;
+  padding-inline: 10%;
   padding-block-start: var(--space-4xl);
 }
 
@@ -108,7 +107,7 @@ main {
 
   display: flex;
   flex-direction: column;
-  gap: var(--space-base);
+  gap: var(--space-md);
 
   background-color: #fff;
   padding: var(--space-md);
@@ -123,8 +122,8 @@ main {
   position: absolute;
   top: -1.5rem;
 
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 4rem;
+  height: 4rem;
 }
 
 .job-details {
@@ -143,7 +142,7 @@ main {
 
 .company-name {
   color: var(--Green-400);
-  font-size: var(--fs-base);
+  font-size: clamp(var(--fs-base), 2vw, var(--fs-lg));
   font-weight: var(--font-weight-bold);
 }
 
@@ -171,7 +170,7 @@ main {
 
 .job-position {
   color: var(--Green-900);
-  font-size: var(--fs-base);
+  font-size: clamp(var(--fs-base), 2vw, var(--fs-lg));
   font-weight: var(--font-weight-bold);
 
   cursor: pointer;
@@ -193,6 +192,7 @@ main {
 
 .job-meta li {
   margin-inline-end: var(--space-sm);
+  min-width: max-content;
 }
 
 .job-meta li:first-child {
@@ -213,7 +213,7 @@ main {
   border: none;
   border-radius: 0.25rem;
 
-  font-size: var(--fs-sm);
+  font-size: clamp(var(--fs-sm), 1.75vw, var(--fs-base));
   font-weight: var(--font-weight-bold);
 
   &:focus-visible {
@@ -232,11 +232,7 @@ main {
 }
 
 .filter-bar {
-  position: absolute;
-  top: -1%;
-
   display: flex;
-  justify-self: center;
   justify-content: space-between;
   align-items: center;
   gap: var(--space-sm);
@@ -245,7 +241,10 @@ main {
   padding-inline: var(--space-md);
   padding-block: var(--space-sm);
   border-radius: 0.5rem;
-  min-width: 90%;
+  min-width: 100%;
+
+  margin-block-start: -6rem;
+  margin-block-end: var(--space-lg);
 }
 
 .filters {
@@ -253,7 +252,7 @@ main {
   flex-wrap: wrap;
   gap: var(--space-sm);
 
-  font-size: var(--fs-base);
+  font-size: clamp(var(--fs-base), 1.5vw, var(--fs-md));
   font-weight: var(--font-weight-bold);
 }
 
@@ -295,5 +294,32 @@ main {
   &:active {
     color: var(--Green-400);
     text-decoration: underline;
+  }
+}
+
+@media (width > 768px) {
+  .header-background {
+    background-image: url("./assets/images/bg-header-desktop.svg");
+  }
+
+  .job-card {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .company-logo {
+    position: relative;
+
+    align-self: flex-end;
+    width: 5.5rem;
+    height: 5.5rem;
+  }
+
+  .job-details {
+    border: none;
+  }
+
+  .job-filter-btns {
+    margin-left: auto;
   }
 }
