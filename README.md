@@ -6,6 +6,8 @@ This is a solution to the [Job listings with filtering challenge on Frontend Men
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
+  - [Screenshots](#screenshots)
+  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
 - [Author](#author)
@@ -20,6 +22,26 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 - Filter job listings based on the categories
 
+### Screenshots
+
+<details open>
+<summary><strong>Desktop</strong></summary>
+
+![Desktop](./screenshots/Screenshot-desktop.png)
+
+</details>
+
+<details>
+<summary><strong>Mobile</strong></summary>
+
+![Mobile](./screenshots/Screenshot-mobile.png)
+
+</details>
+
+### Links
+
+- Live Site URL: [Job Listings](https://job-listings-with-filtering-olive.vercel.app/)
+
 ## My process
 
 ### Built with
@@ -29,7 +51,7 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
+- React - JS library
 
 ## Author
 
