@@ -280,6 +280,11 @@ main {
   border-top-right-radius: 0.25rem;
   border-bottom-right-radius: 0.25rem;
 
+  &:focus-visible {
+    outline-color: var(--Green-900);
+  }
+
+  &:hover,
   &:active {
     background-color: var(--Green-900);
   }
@@ -290,6 +295,20 @@ main {
   color: var(--Gray-400);
   font-size: var(--fs-base);
   font-weight: var(--font-weight-bold);
+
+  transition: transform 0.3s ease;
+
+  &:focus-visible {
+    outline: none;
+    border: 2px solid var(--Green-400);
+    border-radius: 0.25rem;
+    padding: var(--space-xxs);
+  }
+
+  &:hover {
+    text-decoration: underline;
+    transform: scale(1.1);
+  }
 
   &:active {
     color: var(--Green-400);
