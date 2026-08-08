@@ -40,6 +40,7 @@ Users should be able to:
 
 ### Links
 
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/a-responsive-job-listings-page-with-dynamic-filtering-built-with-react-e54IogbDc2)
 - Live Site URL: [Job Listings](https://job-listings-with-filtering-olive.vercel.app/)
 
 ## My process
